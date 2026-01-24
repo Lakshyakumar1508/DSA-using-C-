@@ -47,10 +47,13 @@ int lastOcc(int arr[],int size,int num){
 
 //Main function
 int main(){
-    int arr[6]={2,3,3,4,5,6};
+    int arr[9]={2,3,3,3,3,3,4,5,6};
     int size=sizeof(arr)/sizeof(arr[0]);
 
     cout<<"First Occurance of 3 is Index "<<firstOcc(arr,size,3)<<endl;
     cout<<"Last Occurance of 3 is Index "<<lastOcc(arr,size,3)<<endl;
+
+    //Total number of Occurance
+    cout<<"Total Occurance is "<< lastOcc(arr,size,3)-firstOcc(arr,size,3)+1<<endl;
     return 0;
 }
